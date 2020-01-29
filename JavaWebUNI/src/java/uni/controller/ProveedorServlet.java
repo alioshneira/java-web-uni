@@ -20,7 +20,7 @@ import uni.entity.ProveedorTO;
  * @author Alumno
  */
 @WebServlet(name = "ProveedorServlet", 
-        urlPatterns = {"/AdicionarProv", "/ActualizarProv", "/EliminarProv", "/BuscarProv", "/ListarProv"})
+        urlPatterns = {"/proveedor/AdicionarProv", "/proveedor/ActualizarProv", "/proveedor/EliminarProv", "/proveedor/BuscarProv", "/proveedor/ListarProv"})
 public class ProveedorServlet extends HttpServlet {
 
     //variables
@@ -33,19 +33,19 @@ public class ProveedorServlet extends HttpServlet {
         String path = request.getServletPath();
         try {
             switch (path) {
-                case "/AdicionarProv":
+                case "/proveedor/AdicionarProv":
                     registrar(request, response);
                     break;
-                case "/ActualizarProv":
+                case "/proveedor/ActualizarProv":
                     modificar(request, response);
                     break;
-                case "/EliminarProv":
+                case "/proveedor/EliminarProv":
                     eliminar(request, response);
                     break;
-                case "/BuscarProv":
+                case "/proveedor/BuscarProv":
                     buscar(request, response);
                     break;
-                case "/ListarProv":
+                case "/proveedor/ListarProv":
                     listar(request, response);
                     break;
             }

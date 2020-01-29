@@ -20,7 +20,7 @@ import uni.entity.ProductoTO;
  * @author Alumno
  */
 @WebServlet(name = "ProductoServlet", 
-        urlPatterns = {"/Adicionar", "/Actualizar", "/Eliminar", "/Buscar", "/Listar"})
+        urlPatterns = {"/producto/Adicionar", "/producto/Actualizar", "/producto/Eliminar", "/producto/Buscar", "/producto/Listar"})
 public class ProductoServlet extends HttpServlet {
 
     //variables
@@ -33,19 +33,19 @@ public class ProductoServlet extends HttpServlet {
         String path = request.getServletPath();
         try {
             switch (path) {
-                case "/Adicionar":
+                case "/producto/Adicionar":
                     registrar(request, response);
                     break;
-                case "/Actualizar":
+                case "/producto/Actualizar":
                     modificar(request, response);
                     break;
-                case "/Eliminar":
+                case "/producto/Eliminar":
                     eliminar(request, response);
                     break;
-                case "/Buscar":
+                case "/producto/Buscar":
                     buscar(request, response);
                     break;
-                case "/Listar":
+                case "/producto/Listar":
                     listar(request, response);
                     break;
             }
