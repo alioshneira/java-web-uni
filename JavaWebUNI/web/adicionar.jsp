@@ -1,27 +1,12 @@
-<%-- 
-    Document   : adicionar
-    Created on : 13/11/2016, 12:35:49 PM
-    Author     : Alumno
---%>
-
 <%@page import="uni.dao.LineaDAO"%>
 <%@page import="uni.entity.LineaTO"%>
 <%@page import="java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Adicionar Producto</title>
-        <script src="jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+<%@include file="header.jsp" %>
+    <body>
         <%
             LineaDAO dao = new LineaDAO();
             List<LineaTO> lineas = dao.readAll();
         %>
-
-    </head>
-    <body>
-
         <form id="form1">
             <table border="1">
                 <thead>
@@ -31,11 +16,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>CÃ³digo</b></td>
+                        <td><b>Código</b></td>
                         <td><input type="text" name="txtcodigo" value="" id="txtcodigo" /></td>
                     </tr>
                     <tr>
-                        <td><b>DescripciÃ³n</b></td>
+                        <td><b>Descripción</b></td>
                         <td><input type="text" name="txtnombre" value="" id="txtnombre" /></td>
                     </tr>
                     <tr>
@@ -94,4 +79,4 @@
             });
         });
     </script>
-</html>
+    </html>

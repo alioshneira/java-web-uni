@@ -1,41 +1,29 @@
-<%-- 
-    Document   : index
-    Created on : 23/01/2014, 07:57:34 PM
-    Author     : Alumno
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>CRUD CON JSP Y SERVLET</title>
-        <style>
-            .celda{
-                margin: 10 10 10 10;
-                padding: 10 10 10 10;
-                border-color: slategrey;
-                border-style: solid;
-                border-width: 1px;
-                background: antiquewhite;  
-                float: left;
-                width: 120px;
-                text-align: center;
-            }
-        </style>        
-    </head>
-    <body bgcolor="aqua">
-   
-        <h2><a href="index.jsp">PRODUCTOS</a> | PROVEEDORES</h2>
-        <div style="width:100%; height: 100%" >
-            <div class="celda"><a href="listarProveedor.jsp" target="WORK">Listar</a></div>
-            <div class="celda"><a href="adicionarProveedor.jsp" target="WORK">Registrar</a></div>
-            <div class="celda"><a href="modificarProveedor.jsp" target="WORK">Actualizar</a></div>
-            <div class="celda"><a href="eliminarProveedor.jsp" target="WORK">Eliminar</a></div>
-            <div class="celda"><a href="consultarProveedor.jsp" target="WORK">Buscar</a></div>
+<%@include file="header.jsp" %> 
+    <body>
+        <div class="container">
+            
         </div>
-        <iframe width="900" height="500" name="WORK"></iframe>
-   
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">MODAS S.A.C</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.jsp">PRODUCTOS</a></li>
+                    <li class="active"><a href="proveedor.jsp">PROVEEDORES</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="listarProveedor.jsp" target="WORK">Listar</a></li>
+                <li><a href="adicionarProveedor.jsp" target="WORK">Registrar</a></li>
+                <li><a href="modificarProveedor.jsp" target="WORK">Actualizar</a></li>
+                <li><a href="eliminarProveedor.jsp" target="WORK">Eliminar</a></li>
+                <li><a href="consultarProveedor.jsp" target="WORK">Buscar</a></li>
+            </ul>
+            <iframe width="900" height="500" name="WORK"></iframe>
+        </div>
     </body>
 </html>
 

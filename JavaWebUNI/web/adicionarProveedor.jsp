@@ -1,22 +1,7 @@
-<%-- 
-    Document   : adicionar
-    Created on : 13/11/2016, 12:35:49 PM
-    Author     : Alumno
---%>
-
 <%@page import="uni.dao.ProveedoresDAO"%>
 <%@page import="uni.entity.ProveedorTO"%>
 <%@page import="java.util.List"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Adicionar Proveedor</title>
-        <script src="jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
-        
-
-    </head>
+<%@include file="header.jsp" %> 
     <body>
 
         <form id="form1">
@@ -28,7 +13,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>CÃ³digo</b></td>
+                        <td><b>Código</b></td>
                         <td><input type="text" name="txtcodigo" value="" id="txtcodigo" /></td>
                     </tr>
                     <tr>
@@ -36,7 +21,7 @@
                         <td><input type="text" name="txtrazonsocial" value="" id="txtrazonsocial" /></td>
                     </tr>
                     <tr>
-                        <td><b>DirecciÃ³n</b></td>
+                        <td><b>Dirección</b></td>
                         <td><input type="text" name="txtdireccion" value="" id="txtdireccion" /></td>
                     </tr>
                     <tr>
