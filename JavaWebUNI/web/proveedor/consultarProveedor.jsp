@@ -1,11 +1,13 @@
 <%@include file="../includes/header.jsp" %> 
     <body>
-        <form id="form1">
-            <p>Código <input type="text" name="txtid" value="" id="txtid" /> </p>
-            <input type="button" value="Mostrar" id="btnmostrar"/>
+        <br>
+        <form id="form1" class="jumbotron container">
+            <p>Código <input type="text" name="txtid" value="" id="txtid" />
+            <input type="button" value="Mostrar" id="btnmostrar"/> </p>
         </form>
-        <div>
-            <table id="tabla">
+        
+        <div class="container">
+            <table id="tabla" class="table">
                 <thead>
                     <tr>
                         <th colspan="2">Datos Proveedor</th>

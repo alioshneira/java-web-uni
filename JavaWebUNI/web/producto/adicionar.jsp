@@ -8,7 +8,7 @@
             List<LineaTO> lineas = dao.readAll();
         %>
         <form id="form1">
-            <table border="1">
+            <table class="table" >
                 <thead>
                     <tr>
                         <th colspan="2">Nuevo Producto</th>
@@ -16,15 +16,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>Código</b></td>
+                        <td>Código</td>
                         <td><input type="text" name="txtcodigo" value="" id="txtcodigo" /></td>
                     </tr>
                     <tr>
-                        <td><b>Descripción</b></td>
+                        <td>Descripción</td>
                         <td><input type="text" name="txtnombre" value="" id="txtnombre" /></td>
                     </tr>
                     <tr>
-                        <td><b>IdLinea</b></td>
+                        <td>IdLinea</td>
                         <td><select name="cbolinea"  id="cbolinea">
                                 <%for (LineaTO pro : lineas) {%>
                                 <option value="<%=pro.getIdlinea()%>"><%=pro.getNombre()%></option>

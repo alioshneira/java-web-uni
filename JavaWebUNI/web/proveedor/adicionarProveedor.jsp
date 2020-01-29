@@ -5,7 +5,7 @@
     <body>
 
         <form id="form1">
-            <table border="1">
+            <table class="table">
                 <thead>
                     <tr>
                         <th colspan="2">Nuevo Proveedor</th>
@@ -13,15 +13,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>Código</b></td>
+                        <td>Código</td>
                         <td><input type="text" name="txtcodigo" value="" id="txtcodigo" /></td>
                     </tr>
                     <tr>
-                        <td><b>Razon Social</b></td>
+                        <td>Razon Social</td>
                         <td><input type="text" name="txtrazonsocial" value="" id="txtrazonsocial" /></td>
                     </tr>
                     <tr>
-                        <td><b>Dirección</b></td>
+                        <td>Dirección</td>
                         <td><input type="text" name="txtdireccion" value="" id="txtdireccion" /></td>
                     </tr>
                     <tr>

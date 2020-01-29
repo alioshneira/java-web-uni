@@ -3,10 +3,10 @@
     <body>
 
         <form id="form1">
-            <table border="1">
+            <table class="table">
                 <thead>
                     <tr>
-                        <th colspan="2">Nuevo Proveedor</th>
+                        <th colspan="2">Modificar Proveedor</th>
                     </tr>
                 </thead>
                 <tbody>

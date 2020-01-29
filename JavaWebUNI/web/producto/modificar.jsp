@@ -9,10 +9,10 @@
             List<LineaTO> lineas=dao.readAll();
         %>
         <form id="form1">
-            <table border="1">
+            <table class="table">
                 <thead>
                     <tr>
-                        <th colspan="2">Nuevo Producto</th>
+                        <th colspan="2">Actualizar Producto</th>
                     </tr>
                 </thead>
                 <tbody>
