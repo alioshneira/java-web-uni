@@ -13,7 +13,7 @@
          </nav>
         <div class="container">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="listar.jsp" target="WORK">Listar</a></li>
+                <li><a href="listar.jsp" target="WORK">Listar</a></li>
                 <li><a href="adicionar.jsp" target="WORK">Registrar</a></li>
                 <li><a href="modificar.jsp" target="WORK">Actualizar</a></li>
                 <li><a href="eliminar.jsp" target="WORK">Eliminar</a></li>

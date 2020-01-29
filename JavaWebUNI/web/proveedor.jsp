@@ -16,7 +16,7 @@
         </nav>
         <div class="container">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="listarProveedor.jsp" target="WORK">Listar</a></li>
+                <li><a href="listarProveedor.jsp" target="WORK">Listar</a></li>
                 <li><a href="adicionarProveedor.jsp" target="WORK">Registrar</a></li>
                 <li><a href="modificarProveedor.jsp" target="WORK">Actualizar</a></li>
                 <li><a href="eliminarProveedor.jsp" target="WORK">Eliminar</a></li>
