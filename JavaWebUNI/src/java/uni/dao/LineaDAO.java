@@ -49,7 +49,7 @@ public class LineaDAO implements ICrudDao<LineaTO> {
         try {
             //obtener conexion a la base de datos
             cn = AccesoDB.getConnection();
-            sql = "select * from lineas order by idlinea";
+            sql = "select * from Lineas order by idLinea";
             stm = cn.createStatement();
             rs = stm.executeQuery(sql);
             while (rs.next()) {
