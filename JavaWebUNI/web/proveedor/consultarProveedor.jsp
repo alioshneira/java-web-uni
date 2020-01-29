@@ -1,4 +1,4 @@
-<%@include file="header.jsp" %>
+<%@include file="../includes/header.jsp" %> 
     <body>
         <form id="form1">
             <p>Código <input type="text" name="txtid" value="" id="txtid" /> </p>
@@ -8,7 +8,7 @@
             <table id="tabla">
                 <thead>
                     <tr>
-                        <th colspan="2">Datos Producto</th>
+                        <th colspan="2">Datos Proveedor</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,20 +21,20 @@
 
         $("#btnmostrar").click(function(){
             $.ajax({
-                url: "Buscar",
+                url: "BuscarProv",
                 type: "get",
-                data:{idproducto:$("#txtid").val()},
+                data:{idproveedor:$("#txtid").val()},
                 async: true,
                 success: function (rpta) {
                     if(rpta===null){
-                        $("#tabla").append($("<tr>").append("<td>Producto</td><td>no encontrado</td>"));
+                        $("#tabla").append($("<tr>").append("<td>Proveedor</td><td>no encontrado</td>"));
                     }
                     else{
-                        $("#tabla").append($("<tr>").append("<td>Codigo</td><td>" + rpta.idproducto + "</td>"));
-                        $("#tabla").append($("<tr>").append("<td>Descripción</td><td>" + rpta.descripcion + "</td>"));
-                        $("#tabla").append($("<tr>").append("<td>Linea</td><td>" + rpta.idlinea + "</td>"));
-                        $("#tabla").append($("<tr>").append("<td>Precio</td><td>" + rpta.precioventa + "</td>"));
-                        $("#tabla").append($("<tr>").append("<td>Stock</td><td>" + rpta.stock + "</td>"));
+                        $("#tabla").append($("<tr>").append("<td>Codigo</td><td>" + rpta.idproveedor + "</td>"));
+                        $("#tabla").append($("<tr>").append("<td>Razón Social</td><td>" + rpta.razonsocial + "</td>"));
+                        $("#tabla").append($("<tr>").append("<td>Dirección</td><td>" + rpta.direccion + "</td>"));
+                        $("#tabla").append($("<tr>").append("<td>Teléfono</td><td>" + rpta.telefono + "</td>"));
+                        $("#tabla").append($("<tr>").append("<td>RUC</td><td>" + rpta.ruc + "</td>"));
                     }
                 }
             });

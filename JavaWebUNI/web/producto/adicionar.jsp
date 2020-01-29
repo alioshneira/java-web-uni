@@ -1,12 +1,11 @@
+<%@page import="uni.dao.LineaDAO"%>
 <%@page import="uni.entity.LineaTO"%>
 <%@page import="java.util.List"%>
-<%@page import="uni.dao.LineaDAO"%>
-<%@include file="header.jsp" %> 
-
+<%@include file="../includes/header.jsp" %>
     <body>
         <%
-            LineaDAO dao=new LineaDAO();
-            List<LineaTO> lineas=dao.readAll();
+            LineaDAO dao = new LineaDAO();
+            List<LineaTO> lineas = dao.readAll();
         %>
         <form id="form1">
             <table border="1">
@@ -17,15 +16,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Código</td>
+                        <td><b>Código</b></td>
                         <td><input type="text" name="txtcodigo" value="" id="txtcodigo" /></td>
                     </tr>
                     <tr>
-                        <td>Descripción</td>
+                        <td><b>Descripción</b></td>
                         <td><input type="text" name="txtnombre" value="" id="txtnombre" /></td>
                     </tr>
                     <tr>
-                        <td>IdLinea</td>
+                        <td><b>IdLinea</b></td>
                         <td><select name="cbolinea"  id="cbolinea">
                                 <%for (LineaTO pro : lineas) {%>
                                 <option value="<%=pro.getIdlinea()%>"><%=pro.getNombre()%></option>
@@ -53,28 +52,31 @@
             <p style="color: red;">${requestScope.error}</p>
         </div>
     </body>
-    
-    <script type="text/javascript">
-        $().ready(function(){
 
-        $("#btngrabar").click(function(){
+    <script type="text/javascript">
+        
+        $().ready(function () {
+
+            $("#btngrabar").click(function () {
+                //variables
                 var codVar = $("#txtcodigo").val();
                 var nombreVar = $("#txtnombre").val();
                 var lineaVar = $("#cbolinea").val();
                 var precioVar = $("#txtprecio").val();
                 var stockVar = $("#txtstock").val();
-                $.post('Actualizar',
-                {
-                        idproducto:codVar,
-                        nombre:nombreVar,
-                        idlinea:lineaVar,
-                        preciocompra:precioVar,
-                        stock:stockVar
-                },
-                        function(responseText){
-                        $("#divmensaje").html(responseText);
+                //ejecutar el servlet
+                $.post('Adicionar',
+                        {
+                            idproducto: codVar,
+                            nombre: nombreVar,
+                            idlinea: lineaVar,
+                            preciocompra: precioVar,
+                            stock: stockVar
+                        },
+                        function (responseText) {
+                            $("#divmensaje").html(responseText);
                         });
+            });
         });
-    });
     </script>
-</html>
+    </html>

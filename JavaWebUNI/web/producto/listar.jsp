@@ -1,6 +1,5 @@
-<%@include file="header.jsp" %> 
+<%@include file="../includes/header.jsp" %> 
     <body >
-        <h2>Lista de Productos</h2>
         <table id="tabla" class="table">
             <tbody>
                 <tr>

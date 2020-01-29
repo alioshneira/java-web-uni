@@ -1,7 +1,7 @@
 <%@page import="uni.dao.ProveedoresDAO"%>
 <%@page import="uni.entity.ProveedorTO"%>
 <%@page import="java.util.List"%>
-<%@include file="header.jsp" %> 
+<%@include file="../includes/header.jsp" %> 
     <body>
 
         <form id="form1">

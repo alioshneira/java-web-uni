@@ -1,4 +1,4 @@
-<%@include file="header.jsp" %>
+<%@include file="../includes/header.jsp" %>
 
     <body >
         <table id="tabla" class="table">

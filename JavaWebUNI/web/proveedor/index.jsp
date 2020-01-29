@@ -1,4 +1,4 @@
-<%@include file="header.jsp" %> 
+<%@include file="../includes/header.jsp" %> 
     <body>
         <div class="container">
             
@@ -22,7 +22,7 @@
                 <li><a href="eliminarProveedor.jsp" target="WORK">Eliminar</a></li>
                 <li><a href="consultarProveedor.jsp" target="WORK">Buscar</a></li>
             </ul>
-            <iframe width="900" height="500" name="WORK"></iframe>
+            <iframe width="100%" height="500" name="WORK"></iframe>
         </div>
     </body>
 </html>
