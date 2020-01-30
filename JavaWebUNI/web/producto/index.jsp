@@ -19,7 +19,7 @@
                 <li id="peliminar"><a href="./eliminar.jsp" target="WORK">Eliminar</a></li>
                 <li id="pbuscar"><a href="./consultar.jsp" target="WORK">Buscar</a></li>
             </ul>
-            <iframe style="border: 0px white solid" width="100%" height="500" name="WORK"></iframe>
+            <iframe src="./listar.jsp" style="border: 0px white solid" width="100%" height="500" name="WORK"></iframe>
         </div>
         <script type="text/javascript">
             

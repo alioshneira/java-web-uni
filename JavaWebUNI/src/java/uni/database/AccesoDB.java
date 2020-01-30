@@ -23,7 +23,9 @@ public class AccesoDB {
         //cn = DriverManager.getConnection(url, "neptuno", "admin");
 
         
-        String dbURL = "jdbc:mysql://10.1.1.64/neptuno";
+        //String dbURL = "jdbc:mysql://10.1.1.64/neptuno";
+        String dbURL = "jdbc:mysql://35.232.97.201/neptuno";
+        
         //String dbURL = "jdbc:derby://localhost/neptuno";
         String user = "admin";
         String password = "neptuno";
